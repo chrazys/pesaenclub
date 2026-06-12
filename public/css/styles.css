@@ -287,3 +287,28 @@ img { max-width: 100%; display: block; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; }
 }
+
+.sponsors-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+}
+
+.sponsor-card{
+  display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-decoration:none;
+    color:inherit;
+}
+
+.sponsor-logo{
+    max-width:400px;
+    max-height:400px;
+    object-fit:contain;
+    align-content: center;
+}
