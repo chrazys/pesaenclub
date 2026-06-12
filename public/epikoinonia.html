@@ -81,7 +81,7 @@
         <div>
           <span class="eyebrow">Φόρμα επικοινωνίας</span>
           <h2 class="section-title">Στείλε μήνυμα</h2>
-          <form class="form" style="margin-top:24px" action="https://api.web3forms.com/submit" method="POST">
+          <form class="form" style="margin-top:24px" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
             <!-- Web3Forms: αντικατέστησε με το δικό σου access key από https://web3forms.com -->
             <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
             <input type="hidden" name="subject" value="Νέο μήνυμα από τον ιστότοπο — Pesaen Club" />
@@ -106,7 +106,7 @@
               <select id="subject" name="topic">
                 <option>Γενική ερώτηση</option>
                 <option>Εγγραφή μέλους</option>
-                <option>Καριέρα &amp; Εθελοντισμός</option>
+                <option>Λάθος στην ιστοσελίδα</option>
                 <option>Δωρεές &amp; Χορηγίες</option>
                 <option>Άλλο</option>
               </select>
@@ -115,11 +115,31 @@
               <label for="message">Μήνυμα</label>
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
+            <div class="field">
+              <label for="attachment">Συνημμένο αρχείο (προαιρετικό)</label>
+              <input
+              type="file"
+              id="attachment"
+              name="attachment"
+              accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip">
+            </div>
             <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center">Αποστολή μηνύματος</button>
           </form>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px">
+        <span class="eyebrow">Ανοιχτές θέσεις</span>
+        <h2 class="section-title">Γίνε μέλος του συλλόγου</h2>
+        <p class="section-lead center-block text-center">Έγγραφα</p>
+        <span>
+        <a href="images/Αίτηση εγγραφής.pdf" download class="btn btn--primary">
+    📄 Αίτηση Εγγραφής Μέλους</a></span>
+      </div>
   </section>
 
   <!-- FOOTER -->
